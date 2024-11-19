@@ -10,10 +10,6 @@
 *
 *　输入参数: data[],输入信号; core[],卷积核; cov[],卷积结果;
 *             n,输入信号长度; m,卷积核长度.
-*
-*　李承宇, lichengyu2345@126.com
-*
-*  2010-08-18  
 ******************************************************************/
 void Covlution(float data[], float core[], float cov[], int n, int m)
 {
@@ -70,16 +66,10 @@ void Covlution(float data[], float core[], float cov[], int n, int m)
 
 /******************************************************************
 *　一维小波变换函数
-*
 *　说明: 一维小波变换,只变换一次
-*
 *　输入参数: input[],输入信号; output[],小波变换结果，包括尺度系数和
 *　小波系数两部分; temp[],存放中间结果;h[],Daubechies小波基低通滤波器系数;
 *　g[],Daubechies小波基高通滤波器系数;n,输入信号长度; m,Daubechies小波基紧支集长度.
-*
-*　李承宇, lichengyu2345@126.com
-*
-*  2010-08-19  
 ******************************************************************/
 void DWT1D(float input[], float output[], float temp[], float h[], 
            float g[], int n, int m)
